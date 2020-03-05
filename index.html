@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        
+        <title>Fellini&#39;s Stratford Home</title>
+        
+        <link rel="stylesheet" type="text/css" href="Fellini's (1).css">
+        
+        <link href="https://fonts.googleapis.com/css?family=Abhaya+Libre:700|Lato" rel="stylesheet">
+        
+    </head>
+    
+    <body style="margin: 0;">
+        
+<!--        nav bar-->
+        <div class="nav">
+            
+            <ul>
+                
+                <img class="logo" src="Images/Fellini's%20Logo.png" alt="Fellini's Stratford" width=50px>
+                
+                <a href="Home%20Page_Fellini's (1).html#Top Image"><h5>fellini's</h5></a>
+                
+                <li id="opt"><a href="#Reserve">RESERVE</a></li>
+                
+                <li id="opt"><a href="menu/Menu1_Fellini's.html">MENU</a></li>
+                
+                <li id="opt"><a href="#About Us">ABOUT US</a></li>
+                
+                <li id="opt"><a class="active" href="#TopImage">HOME</a></li>
+                
+            </ul>
+            
+        </div>
+
+        <!--TOP SLIDESHOW-->
+<!-- Code copied from:https://www.w3schools.com/howto/howto_js_slideshow.asp 
+Author: w3schools.com 
+Name: Automatic slideshow 
+Description: Displays an automatic (animated) slideshow. 
+Date retrieved: Mar. 17, 2018 -->
+        
+<!--        slideshow images and text-->
+<div id="TopImageAndText">
+    
+        <h1 align="left" style="font-size:6.5vw;">Classic <br/> Italian cucina.</h1>
+            
+            <svg height="20" width="100">
+                
+                <line x1="50" y1="500" x2="200" y2="500" style="stroke:rgb(255,0,0); stroke-width:5"/>
+                
+            </svg>
+    
+    <div id="TopImage">
+    
+    <!-- Slideshow container -->
+    
+        <div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+            
+            <img src="Images/Top%20Image%201.jpg" alt="Fellini's" width="100%">
+            
+            </div>
+
+            <div class="mySlides fade">
+            
+            <img src="Images/Top%20Image%202.jpg" alt="Fellini's" width="100%"/>
+            
+            </div>
+
+            <div class="mySlides fade">
+            
+            <img src="Images/Top%20Image%203.jpg" alt="Fellini's" width="100%"/>
+            
+            </div>
+    
+        </div>
+        
+   <!-- THE JAVASCRIPT PART -->
+        
+        <script type= "text/javascript">
+        
+    var slideIndex = 0;
+        
+    showSlides();
+
+        function showSlides() {
+        
+            var i;
+        
+            var slides = document.getElementsByClassName("mySlides");
+            
+            for (i = 0; i < slides.length; i++) {
+            
+                slides[i].style.display = "none"; 
+            
+            }
+  
+            slideIndex++;
+  
+            if (slideIndex > slides.length) {slideIndex = 1} 
+ 
+            slides[slideIndex-1].style.display = "block"; 
+  
+            setTimeout(showSlides, 3000); // Change image every 3 seconds
+            
+        }
+     
+        </script>
+        
+    </div>
+    
+</div>
+        <div id="line">
+            
+            <hr size="6" width=70px noshade color="white"/>
+            
+        </div>    
+        
+<!--        main text on homepage-->
+        <div id="mainText">
+            
+<!--            first column of content-->
+            <div id="colOne">
+            
+                <div id="About Us">
+            
+                    <br/>
+            
+                    <h2>ABOUT FELLINI&#39;S</h2>
+            
+                    <p>
+                    At Fellini's, we aim to provide customers, the classic Italian Experience. We have been  part of Stratford's history since 1994 - sharing the culture without tainting the heritage. We take pride in our cuisine and hope that you visit us, if you're looking for something <i>delizioso! </i>
+                    </p>
+            
+                </div>
+        
+                <br/>
+        
+                <div id="Reserve">
+            
+                    <h2>RESERVE</h2>
+            
+                    <form action="/action_page.php">
+  
+                        <input type="date" name="Date" style="font-family:'Lato', 'sans-serif'; color:#636363">
+                    
+                        <select id="hour" style="font-family:'Lato', 'sans-serif'; color:#636363">
+                    
+                            <option value="1">1</option>
+               
+                            <option value="2">2</option>
+ 
+                            <option value="3">3</option>
+ 
+                            <option value="4">4</option>
+ 
+                            <option value="5">5</option>
+                
+                            <option value="6">6</option>
+ 
+                            <option value="7">7</option>
+                         
+                            <option value="8">8</option>
+ 
+                            <option value="9">9</option>
+                
+                            <option value="10">10</option>
+ 
+                            <option value="11">11</option>
+                
+                            <option value="12">12</option>
+
+                        </select>
+            
+                        <select id="minute" style="font-family:'Lato', 'sans-serif'; color:#636363">
+  
+                            <option value="00">00</option>
+                
+                            <option value="30">30</option>
+
+                        </select>
+            
+                        <select id="AMPM" style="font-family:'Lato', 'sans-serif'; color:#636363">
+  
+                            <option value="AM">AM</option>
+                
+                            <option value="PM">PM</option>
+
+                        </select>
+            
+                        <select id=numGuests style="font-family:'Lato', 'sans-serif'; color:#636363">
+  
+                            <option value="2">2 guests</option>
+ 
+                            <option value="3">3 guests</option>
+ 
+                            <option value="4">4 guests</option>
+ 
+                            <option value="5">5 guests</option>
+                
+                            <option value="6">6 guests</option>
+ 
+                            <option value="7">7 guests</option>
+ 
+                            <option value="8">8 guests</option>
+ 
+                            <option value="9">9 guests</option>
+                
+                            <option value="10">10 guests</option>
+ 
+                            <option value="11">11 guests</option>
+
+                        </select>
+                
+                    </form>
+            
+                    <form>
+  
+                        <input type="text" name="Name" placeholder="Name">
+                
+                        <input type="text" name="Contact" placeholder="Phone or e-mail" style="width:180px">
+  
+                    </form>
+            
+                    <input type="submit" value="Make Reservation" onclick="alert('Your reservation has been completed. Check your email for confirmation.')" style="font-family:'Lato', 'sans-serif'; color:white; font-size: 1em">
+            
+                    <h3>THE OLIVE PIT</h3>
+            
+                    <p>Our wine cellar offers a private dining area that is perfect for your group of 12&#45;20.
+                
+                        <br/>
+                
+                    Call today to set up your reservation!</p>
+        
+                </div>
+                
+            </div>
+        
+<!--            second column of content-->
+            <div id="colTwo">
+            
+            <div id="Contact">
+            
+                <h3>HOURS</h3>
+            
+                <table style="width: 30%">
+            
+                    <tr>
+                    
+                        <td>Monday&#58;</td>
+                    
+                        <td>CLOSED</td>
+                    
+                    </tr>
+                
+                    <tr>
+                    
+                        <td>Tuesday &#45; Thursday&#58;</td>
+                    
+                        <td>11&#58;30AM &#45; 3&#58;00PM
+                            <br/> 4&#58;30PM &#45; 8&#58;00PM</td>
+                    
+                    </tr>
+                
+                    <tr>
+                    
+                        <td>Friday&#58;</td>
+                    
+                        <td>11&#58;30AM &#45; 3&#58;00PM
+                            <br/> 4&#58;30PM &#45; 8&#58;30PM</td>
+                
+                    </tr>
+                
+                    <tr>
+                    
+                        <td>Saturday&#58;</td>
+                
+                        <td>11&#58;30AM &#45; 3&#58;30PM
+                            <br/> 4&#58;30PM &#45; 8&#58;30PM</td>
+                    
+                    </tr>
+                
+                    <tr>
+                    
+                        <td>Sunday&#58;</td>
+                
+                        <td>12&#58;00PM &#45; 7&#58;00PM</td>
+                    
+                    </tr>
+                
+                </table>
+
+                <h3>LOCATION</h3>
+                    
+                    <table>
+                        <tr>
+                            <td>
+                    107 ONTARIO STREET<br>STRATFORD, ONTARIO<br>(519) 271&#45;3333
+                            </td>
+                        </tr>
+                    </table>
+            
+            
+                <div id="map" style="width:100%;height:150px;">
+                
+                    <a class="map" href="mappage.html"><img src="Images/map.PNG" alt="Fellini's" width="150px"/></a>
+                    
+                </div>
+            
+               <p style="font-size:16px"><a href="mailto:info@fellinisstratford.com">info&#64;fellinisstratford.com</a></p>
+            
+                <h3>CAREERS</h3>
+                
+                <p style="font-size:16px; margin-bottom:40px">Email resume to
+                    <br><a href="mailto:info@fellinisstratford.com">info&#64;fellinisstratford.com</a>.</p>
+                
+            </div>
+                
+            </div>
+        
+        </div>
+        
+<!--        footer(top)-->
+        <div class="TopFooter" width=100%>
+            
+                <h4 style="color:white">Subscribe to our newsletter!</h4>
+            
+                <form>
+  
+                    <input type="text" name="Name" placeholder="Name">
+                
+                    <input type="text" name="Contact" placeholder="E-mail address" style="width:400px">
+                 
+                    <input type="submit" value="SUBSCRIBE" onclick="alert('You have now subscribed to our newsletter!')">
+                
+                    <br/>
+                
+                    <input type="checkbox" name="B-day club" value="Yes"><p style="font-family: 'Lato', 'sans-serif'; color:white; font-size:1em; margin-left:80px; margin-top:-22px">I would like to join the Birthday Club for deals on my birthday!</p>
+  
+                </form>
+            
+                <p style="color:white; margin-left:250px; margin-top:50px; margin-bottom:20px; letter-spacing:0.07em">FELLINI&#39;S STRATFORD, 107 ONTARIO STREET, (519) 271&#45;3333</p>
+                
+            </div>
+        
+<!--        footer(bottom)-->
+            <div class="BottomFooter" width=100%>
+                
+                <p style="color:white; font-size:14px; padding-top: 30px">Copyright &#169; Fellini&#39;s Stratford 2019</p>
+                    
+                <a href="https://www.facebook.com/fellinisitalian/"><img src="Images/facebook-logo%20WHITE.png" align="right" alt="Fellini's Stratford – Facebook" width="2%" style="position:absolute; TOP: height-30px; LEFT:90%; display:inline; float:left"></a>
+                                
+                <a href="https://twitter.com/fellinisresto"><img src="Images/twitter-logo-silhouette%20WHITE.png" align="right" alt="Fellini's Stratford - Twitter" width="2%" style="position:absolute; TOP: height-30px; LEFT:95%; display:inline; float:left"></a>
+                        
+            </div>
+    
+      </body>
+    
+</html>
